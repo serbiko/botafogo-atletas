@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+body {
+  font-family: 'Neuton', serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  padding: 20px; /* Adiciona espaçamento nas bordas da página */
+}
+
+header {
+  background: #444;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box; /* Adiciona este box model para garantir que a barra ocupe toda a largura */
+}
+
+header img.escudo {
+  width: 50px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Alumni Sans Inline One', cursive; /* Define a fonte dos títulos */
+  font-size: 1.5em;
+  text-align: center;
+  flex-grow: 1; /* Permite que o título ocupe o espaço central */
+}
+
+#logout {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Reduzido o tamanho do botão */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#logout:hover {
+  background: #555;
+}
+
+#filtro-elenco {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; /* Adicionado margin-top para espaço acima da barra de busca */
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #555;
+}
+
+.search-container {
+  position: relative;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 400px;
+}
+
+#search-bar {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+#lista-atletas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%; /* Ajuste para evitar overflow */
+}
+
+@media (min-width: 768px) {
+  #lista-atletas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #lista-atletas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.atleta {
+  background: white;
+  padding: 15px; /* Reduzido o padding */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px; /* Adicionado margin para espaçamento entre os cards e as bordas */
+}
+
+.atleta img {
+  width: 90%; /* Reduzido o tamanho da imagem */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.atleta h2 {
+  margin: 0;
+}
+
+.atleta p {
+  margin: 10px 0;
+}
+
+.atleta a.detalhes-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #000;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.atleta a.detalhes-btn:hover {
+  background: #555;
+}
+
+.login-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-container img.escudo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label,
+.login-container input,
+.login-container button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.login-container label {
+  color: #333;
+}
+
+.login-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container button:hover {
+  background: #555;
+}
+
+header.login-header h1 {
+  font-family: 'Alumni Sans Inline One', cursive; /* Define a fonte do título da página de login */
+}

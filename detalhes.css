@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+body {
+  font-family: 'Neuton', serif;
+  margin: 0;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Letras brancas */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  padding: 20px; /* Adiciona espaçamento nas bordas da página */
+}
+
+header {
+  background: #444;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box; /* Adiciona este box model para garantir que a barra ocupe toda a largura */
+}
+
+header img.escudo {
+  width: 50px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Alumni Sans Inline One', cursive; /* Define a fonte dos títulos */
+  font-size: 1.5em;
+  text-align: center;
+  flex-grow: 1; /* Permite que o título ocupe o espaço central */
+}
+
+.voltar-btn {
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.voltar-btn:hover {
+  background: #555;
+}
+
+.detalhes-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detalhes-foto-container {
+  flex: 1;
+  text-align: center;
+}
+
+.detalhes-foto {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.detalhes-info-container {
+  flex: 2;
+  max-width: 600px;
+}
+
+.detalhes-info-container p {
+  margin: 10px 0;
+}
+
+#detalhes-atleta {
+  text-align: left;
+  color: #fff; /* Letras brancas */
+}
+
+.detalhes-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.detalhes-link:hover {
+  text-decoration: underline;
+}

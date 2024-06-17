@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atletas - Botafogo</title>
+  <link rel="icon" href="escudo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <img src="escudo.png" alt="Escudo Botafogo" class="escudo">
+    <h1>Atletas Botafogo 2024-1</h1>
+    <button id="logout">Sair</button>
+  </header>
+  <main>
+    <div id="filtro-elenco">
+      <button class="filter-btn" data-filter="all">Elenco Completo</button>
+      <button class="filter-btn" data-filter="masculino">Masculino</button>
+      <button class="filter-btn" data-filter="feminino">Feminino</button>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Pesquisar por nome ou posição">
+      <button id="clear-search" style="display: none;">&times;</button>
+    </div>
+    <div id="lista-atletas"></div>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

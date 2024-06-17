@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Botafogo</title>
+  <link rel="icon" href="escudo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="login-header">
+    <h1>Login</h1>
+  </header>
+  <main>
+    <div class="login-container">
+      <img src="escudo.png" alt="Escudo Botafogo" class="escudo">
+      <form id="login-form">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <small>Usuário correto: admin</small>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <small>Senha correta: 1234</small>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="login.js"></script>
+</body>
+</html>
